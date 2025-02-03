@@ -13,7 +13,7 @@ Retro Egg Timer is a retro, pixel art-themed web app that lets you choose your p
 3. Use **Pause/Resume** and **Stop** to control the timer.
 
 ## Live Demo
-View it live on GitHub Pages: [Retro Egg Timer]([https://Bahey-shalash.github.io/Retro-Egg-Timer/](https://bahey-shalash.github.io/Retro-Egg-Timer.io/))
+View it live on GitHub Pages: [Retro Egg Timer](https://bahey-shalash.github.io/Retro-Egg-Timer.io/)
 
 ## Setup
 Clone the repository and open `index.html` in your browser:
