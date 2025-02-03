@@ -110,30 +110,24 @@
       <!-- Soft boiled egg (3 minutes = 180 seconds) -->
       <div class="egg-option" data-time="180">
         <svg viewBox="0 0 64 64">
-          <!-- Soft egg: bright yellow with a simple pixel border -->
           <ellipse cx="32" cy="32" rx="20" ry="28" fill="#fff200" stroke="#000" stroke-width="2"/>
-          <!-- Add some pixel detail -->
           <rect x="28" y="20" width="8" height="2" fill="#000"/>
         </svg>
         <div class="egg-label">Soft</div>
       </div>
-      <!-- Medium boiled egg (5 minutes = 300 seconds) -->
-      <div class="egg-option" data-time="300">
+      <!-- Medium boiled egg (6 minutes = 360 seconds) -->
+      <div class="egg-option" data-time="360">
         <svg viewBox="0 0 64 64">
-          <!-- Medium egg: a warmer yellow with a pixelated gradient effect -->
           <ellipse cx="32" cy="32" rx="20" ry="28" fill="#ffcc00" stroke="#000" stroke-width="2"/>
-          <!-- Pixel pattern -->
           <rect x="26" y="24" width="12" height="2" fill="#000"/>
           <rect x="30" y="30" width="4" height="2" fill="#000"/>
         </svg>
         <div class="egg-label">Medium</div>
       </div>
-      <!-- Hard boiled egg (7 minutes = 420 seconds) -->
-      <div class="egg-option" data-time="420">
+      <!-- Hard boiled egg (9 minutes = 540 seconds) -->
+      <div class="egg-option" data-time="540">
         <svg viewBox="0 0 64 64">
-          <!-- Hard egg: a deeper golden tone with a crack detail -->
           <ellipse cx="32" cy="32" rx="20" ry="28" fill="#e6ac00" stroke="#000" stroke-width="2"/>
-          <!-- A pixelated crack -->
           <polyline points="32,10 32,20 28,26 32,32 36,38 32,44" fill="none" stroke="#000" stroke-width="2" stroke-linecap="square"/>
         </svg>
         <div class="egg-label">Hard</div>
@@ -146,6 +140,9 @@
     </div>
     <div class="display" id="timerDisplay">00:00</div>
   </div>
+
+  <!-- Audio element for the soft song -->
+  <audio id="finishSound" src="soft-song.mp3" preload="auto"></audio>
 
   <script>
     const eggOptions = document.querySelectorAll('.egg-option');
@@ -162,6 +159,7 @@
     const pauseButton = document.getElementById('pauseButton');
     const stopButton = document.getElementById('stopButton');
     const timerDisplay = document.getElementById('timerDisplay');
+    const finishSound = document.getElementById('finishSound'); // Get the audio element
 
     let timerInterval;
     let remainingSeconds = 0;
@@ -202,6 +200,8 @@
           updateDisplay(remainingSeconds);
           if (remainingSeconds <= 0) {
             clearInterval(timerInterval);
+            // Play the soft song
+            finishSound.play();
             alert("Your egg is ready!");
             resetUI();
           }
