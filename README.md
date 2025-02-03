@@ -21,3 +21,4 @@ Clone the repository and open `index.html` in your browser:
 ```bash
 git clone https://github.com/Bahey-shalash/Retro-Egg-Timer.git
 cd Retro-Egg-Timer
+# Triggering GitHub Pages Rebuild
