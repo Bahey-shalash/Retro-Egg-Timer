@@ -1,6 +1,6 @@
-# Pixel Egg Timer
+# Retro Egg Timer
 
-Pixel Egg Timer is a retro, pixel art-themed web app that lets you choose your preferred boiled egg level (soft, medium, or hard) and start a fun countdown. Enjoy pause and stop controls for a nostalgic cooking timer experience!
+Retro Egg Timer is a retro, pixel art-themed web app that lets you choose your preferred boiled egg level (soft, medium, or hard) and start a fun countdown. Enjoy pause and stop controls for a nostalgic cooking timer experience!
 
 ## Features
 - Retro pixel art design
@@ -13,11 +13,11 @@ Pixel Egg Timer is a retro, pixel art-themed web app that lets you choose your p
 3. Use **Pause/Resume** and **Stop** to control the timer.
 
 ## Live Demo
-View it live on GitHub Pages: [Pixel Egg Timer](https://Bahey-shalash.github.io/pixel-egg-timer/)
+View it live on GitHub Pages: [Retro Egg Timer](https://Bahey-shalash.github.io/Retro-Egg-Timer/)
 
 ## Setup
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/Bahey-shalash/pixel-egg-timer.git
-cd pixel-egg-timer
+git clone https://github.com/Bahey-shalash/Retro-Egg-Timer.git
+cd Retro-Egg-Timer
